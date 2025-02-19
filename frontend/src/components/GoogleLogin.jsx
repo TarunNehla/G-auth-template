@@ -1,6 +1,6 @@
 import React from 'react';
 import {useGoogleLogin} from  '@react-oauth/google'
-import {googleAuth} from './api';
+import {googleAuth} from '../api';
 import { useNavigate } from 'react-router-dom';
 
 function GoogleLogin() {

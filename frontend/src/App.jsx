@@ -1,11 +1,11 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route,Navigate, NavigationType } from 'react-router-dom';
-import GoogleLogin from './GoogleLogin'; 
-import Dashboard from './Dashboard';
-import PageNotFound from './PageNotFound';
+import GoogleLogin from './components/GoogleLogin'; 
+import Dashboard from './components/Dashboard';
+import PageNotFound from './utils/PageNotFound';
 import { useState } from 'react';
 import { GoogleOAuthProvider } from '@react-oauth/google';
-import RefrshHandler from './RefreshHandler';
+import RefrshHandler from './utils/RefreshHandler';
 
 function App() {
 
