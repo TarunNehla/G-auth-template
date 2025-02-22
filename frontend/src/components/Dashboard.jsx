@@ -21,7 +21,7 @@ function Dashboard() {
     <div>
       <h1>Welcome {userInfo?.name}</h1>
       <h2>Email : {userInfo?.email}</h2>
-      <img src={userInfo?.image}/>
+      {/* <img src={userInfo?.image}/> */}
       <button onClick={handleLogout}>Logout</button>
     </div>
   )

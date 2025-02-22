@@ -19,7 +19,7 @@ const GoogleLogin = async (req,res) => {
         let user = await UserModel.findOne({email});
         if(!user){
             user = await UserModel.create({
-                name,email,image: picture
+                name,email
             })
         }
         const {_id} = user;

@@ -1,19 +1,8 @@
-const express = require('express');
-const app = express();
-require('dotenv').config();
+const app = require('./app')
 const PORT = process.env.PORT || 8080;
-require('./models/dbConnection');
-const authRouter = require('./routes/authrouter')
-const cors = require('cors');
+const logger = require('./utils/logger')
 
-app.use(cors());
 
-app.get('/', (req,res) => {
-    res.send('hello from backend');
-})
-
-app.use('/auth', authRouter )
-
-app.listen(PORT, ()=> {
-    console.log(`server is listening on port ${PORT}`);
+app.listen(PORT, () => {
+    logger.info(`Server running on port ${PORT}`)
 })
